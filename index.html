@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="lapiz,cuaderno,cartuchera" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Textarea</title>
+    <title>Formulario de contacto</title>
 </head>
 
 <body>
     <form>
-        <h2>Formulario de contacto</h2>
+        <h2>Formulario de contacto</h2> 
 
         <!-- SIMPLE INPUTS -->
-        <fieldset>
+        <fieldset>      
             <legend>INFORMACIÓN BASICA</legend>
             <div class="form-input">
                 <label>Nombre completo
                     <input type="text" placeholder="Agustin Lovagnini">
-                </label>
+                </label>    
             </div>
 
             <div class="form-input">
@@ -28,9 +28,9 @@
                 </label>
             </div>
 
-            <div class="form-input">
+            <div class="form-input">            
                 <label>Asunto
-                    <input type="text" placeholder="El asunto de tu mensaje">
+                    <input type="text" placeholder="Dejá el asunto de tu mensaje">
                 </label>
             </div>
         </fieldset>
@@ -38,7 +38,7 @@
 
         <div class="form-input">
             <label>Tipo de usuario
-                <select name="type-of-user">
+                <select name="type-of-user" aria-label="Seleccion del tipo de usuario">
                     <option value="user1">Seguidor/a</option>
                     <option value="user2">Empresa</option>
                     <option value="user3">Otros</option>
@@ -50,7 +50,7 @@
 
         <div class="form-input">
             <label>Referente
-                <input list="referente" name="referente">
+                <input list="referente" name="referente" aria-label="escribe quien te refirió">
                 <datalist id="referente" name="type-of-user">
                     <option value="Amigo">Un amigo/pariente</option>
                     <option value="Una empresa">Una empresa del rubro IT</option>
